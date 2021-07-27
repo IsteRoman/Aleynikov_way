@@ -1,0 +1,387 @@
+.price__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.price__intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 1;
+  flex-shrink: 0;
+  max-width: 305px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    align-items: center;
+    text-align: center;
+    order: 0;
+    max-width: unset;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    align-items: center;
+    order: 0;
+  }
+}
+
+.price__intro-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.53;
+  color: $gray;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.price__intro-title::before {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 175px;
+  height: 3px;
+  background-color: $peach;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    content: none;
+  }
+}
+
+.price__intro-text {
+  margin: 0;
+  margin-bottom: 60px;
+  line-height: 170%;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.price__contacts {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.price__contacts-text {
+  margin-bottom: 13px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.54;
+  color: $gray;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.88;
+    text-align: center;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.88;
+    text-align: center;
+  }
+}
+
+.price__contacts-link {
+  font-size: 20px;
+  line-height: 1.6;
+  color: $black;
+  text-decoration: none;
+  transition: $default-transition;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    font-size: 18px;
+    line-height: 1.88;
+    color: $peach;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    font-size: 18px;
+    line-height: 1.88;
+    color: $peach;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.price__contacts-icon {
+  left: -50px;
+  stroke: $peach;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.price__list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 370px;
+  min-height: 672px;
+  margin-bottom: 10px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid $gray-0-3;
+  border-radius: 6px;
+  transition: $default-transition;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    max-width: 288px;
+    min-height: 629px;
+    padding: 30px 20px 0 20px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    max-width: 288px;
+    min-height: 629px;
+    margin-bottom: 30px;
+    padding: 30px 20px 0 20px;
+  }
+}
+
+.price__item:hover,
+.price__item:focus-within {
+  border: 1px solid $peach;
+  box-shadow: 0 0 0 2px $peach inset;
+}
+
+.price__item:not(:last-of-type) {
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-right: 0;
+  }
+}
+
+.price__item-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.214;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.416;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.416;
+  }
+}
+
+.price__item-tag {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.36;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-top: 10px;
+  }
+}
+
+.price__item--complecs .price__item-title {
+  color: $peach;
+}
+
+.price__item--econom .price__item-title {
+  letter-spacing: -1.27px;
+}
+
+.price__item--econom .price__item-tag {
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-left: -7px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-left: -7px;
+  }
+}
+
+.price__item-text {
+  width: 90%;
+  margin: 0;
+  margin-bottom: 28px;
+  line-height: 1.5;
+  color: $gray;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.price__advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px 0 0 30px;
+  list-style: none;
+  border-top: 1px solid $gray-0-3;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    padding: 20px 0 0 30px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    padding: 20px 0 0 30px;
+  }
+}
+
+.price__item--complecs .price__advantages-list {
+  border-top: 1px solid $peach;
+}
+
+.price__advantages-item {
+  position: relative;
+  display: inline-block;
+  line-height: 2;
+  color: $gray;
+}
+
+.price__advantages-item:not(:last-of-type) {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.price__item--complecs .price__advantages-item:first-of-type {
+  margin-bottom: 6px;
+}
+
+.price__item--complecs .price__advantages-item::before,
+.price__item--econom .price__advantages-item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -25px;
+  width: 22px;
+  height: 22px;
+}
+
+.price__item--complecs .price__advantages-item::before {
+  background: url("../img/icon-check-gray.png") no-repeat;
+}
+
+.price__item--econom .price__advantages-item::before {
+  left: -30px;
+  background: url("../img/icon-check-peach.png") no-repeat;
+}
+
+.price__item-button {
+  justify-content: center;
+  width: 310px;
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+}

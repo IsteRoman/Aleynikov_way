@@ -1,0 +1,43 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  width: 340px;
+  min-height: 75px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: $peach;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  transition: $default-transition;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    width: 250px;
+    min-height: 50px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    width: 288px;
+    min-height: 50px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+.button:focus,
+.button:hover,
+.button:active {
+  background-color: $peach-hover;
+  outline: 0;
+}
+
+.button:active {
+  opacity: 0.5;
+}

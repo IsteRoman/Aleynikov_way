@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие по Европе</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body class="body">
+    <div class="visually-hidden">
+      @@include("build/img/sprite.svg")
+    </div>
+    <header class="header header--menu-close header--no-js">
+      <div class="wrapper header__section">
+        <a class="header__logo" href=#>
+          <img class="header__logo-image" src="img/logo-way.svg" width="57" height="22" alt="Путешествие по Европе">
+        </a>
+        <button class="header__button" type="button" aria-label="Открыть меню">
+          <svg class="header__close" width="30" height="30">
+            <use href="#ico-menu"></use>
+          </svg>
+          <svg class="header__open" width="22" height="22">
+            <use href="#ico-cross"></use>
+          </svg>
+        </button>
+        <ul class="header__navigation nav">
+          <li class="nav__item">
+            <a class="nav__link" href="#places">О путешествии
+              <svg class="nav__link-ico" width="25" height="25">
+                <use href="#ico-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#price">Цены
+              <svg class="nav__link-ico" width="25" height="25">
+                <use href="#ico-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+          <a class="header__contacts contacts" href="tel:849978468446" title="Позвони нам">
+            <svg class="contacts__icon" width="30" height="30">
+              <use href="#ico-phone"></use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class ="wrapper intro__section">
+          <h1 class="intro__title">Путешествие по Европе</h1>
+          <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+          <a class="button intro__button" href="#places">
+            смотреть тур
+            <svg class="intro__button-icon" width="14" height="14">
+              <use href="#ico-arrow-down"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="places">
+        <p class="visually-hidden"><a id="places"></a></p>
+        <div class="wrapper places__block">
+          <div class="places__intro">
+            <h2 class="places__intro-title title">Места посещения</h2>
+            <p class="places__intro-text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+          </div>
+          <ul class="places__miniatures">
+          </ul>
+          <ul class="places__check-bar">
+          </ul>
+          <ul class="places__full-sizes">
+          </ul>
+        </div>
+      </section>
+      <section class="price">
+        <p class="visually-hidden"><a id="price"></a></p>
+        <div class="wrapper price__block">
+          <div class="price__intro">
+            <h2 class="price__intro-title">Цены</h2>
+            <p class="price__intro-text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+            <div class="price__contacts">
+              <span class="price__contacts-text">Свяжитесь с нами</span>
+              <a class="price__contacts-link contacts" href="tel:849978468446" title="Позвони нам">
+                <svg class="price__contacts-icon contacts__icon" width="30" height="30">
+                  <use href="#ico-phone"></use>
+                </svg>
+                +7 (499) -784-684-46
+              </a>
+            </div>
+          </div>
+          <ul class="price__list">
+            <li class="price__item price__item--complecs">
+              <p class="price__item-title"><span>Комплексный</span><span class="price__item-tag">$1999</span></p>
+              <p class="price__item-text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="price__advantages-list">
+                <li class="price__advantages-item">Разработанный маршрут с гидом группы</li>
+                <li class="price__advantages-item">Перелет, трансфер и проживание в отелях</li>
+                <li class="price__advantages-item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="price__advantages-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="button price__item-button button-buy" href="buy-now.html">купить тур сейчас</a>
+            </li>
+            <li class="price__item price__item--econom">
+              <p class="price__item-title"><span>Экономный</span><span class="price__item-tag">$1399</span></p>
+              <p class="price__item-text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="price__advantages-list">
+                <li class="price__advantages-item">Разработанный маршрут с гидом группы</li>
+                <li class="price__advantages-item">Перелет и трансфер</li>
+                <li class="price__advantages-item">Проживание в хостелах при отелях</li>
+                <li class="price__advantages-item">Только завтраки в отелях</li>
+                <li class="price__advantages-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="button price__item-button button-buy" href="buy-now.html">купить тур сейчас</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="wrapper feedback__block">
+          <div class="feedback__form-block">
+            <h2 class="feedback__title">У Вас остались вопросы?</h2>
+            <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+            <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="GET">
+              <label class="visually-hidden" for="user_phone-feedback" aria-label="Введите свой номер"></label>
+              <span class="feedback__required form__required-text"></span>
+              <input class="feedback__input form__input form__input--reqaired" type="tel" name="user-phone-feedback" id="user_phone-feedback" placeholder="Введите 10 цифр номера" required>
+              <label class="visually-hidden" for="user_email-feedback" aria-label="Введите свой адрес электронной почты"></label>
+              <input class="feedback__input form__input" type="email" name="user-email-feedback" id="user_email-feedback" placeholder="E-mail">
+              <button class="button feedback__button" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__block">
+          <button class="popup__button-close" type="button" aria-label="Закрыть">
+            <svg class="popup__button-close-icon" width="22" height="22">
+              <use href="#ico-cross"></use>
+            </svg>
+          </button>
+          <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="GET">
+            <h2 class="popup__title">Купить тур</h2>
+            <label class="visually-hidden" for="user_phone-price" aria-label="Введите свой номер"></label>
+            <span class="popup__required form__required-text"></span>
+            <input class="popup__input form__input form__input--reqaired" type="tel" name="user-phone-price" id="user_phone-price" placeholder="Введите 10 цифр номера" required>
+            <label class="visually-hidden" for="user_email-price" aria-label="Введите свой адрес электронной почты"></label>
+            <input class="popup__input form__input" type="email" name="user-email-price" id="user_email-price" placeholder="E-mail">
+            <button class="button popup__submit-button" type="submit">отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer__block">
+        <div class="footer__next-direction">
+          <p class="footer__title">Следующие путешествия</p>
+          <div class="footer__next-direction-block">
+            <ul class="footer__next-direction-list footer__next-direction-list--one">
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Марсель</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Ним</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Монпелье</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Барселона</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Пальма</a>
+              </li>
+            </ul>
+            <ul class="footer__next-direction-list footer__next-direction-list--two">
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Сардиния</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Палермо</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Катания</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Неаполь</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Рим</a>
+              </li>
+            </ul>
+            <ul class="footer__next-direction-list footer__next-direction-list--three">
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Корс</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Ницца</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Монако</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Динь-ле-Бен</a>
+              </li>
+              <li class="footer__next-direction-item">
+                <a class="footer__next-direction-link" href="country.html">Гренобль</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__our-contacts">
+          <p class="footer__title">Наши контакты</p>
+          <a class="footer__contacts-link contacts" href="mailto:puteshestviemechta@gmail.ru" title="Напишите нам">
+            <svg class="footer__contacts-icon-email contacts__icon" width="26" height="20">
+              <use href="#ico-mail"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+          <a class="footer__contacts-link contacts" href="tel:849978468446" title="Позвони нам">
+            <svg class="footer__contacts-icon-phone contacts__icon" width="30" height="30">
+              <use href="#ico-phone"></use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
+        </div>
+        <div class="footer__corporate-travel">
+          <p class="footer__title">Корпоративные путешествия</p>
+          <p class="footer__corporate-travel-text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+        </div>
+      </div>
+    </footer>
+    <template id="miniature">
+      <li class="places__miniature" tabindex="0">
+        <picture>
+          <source id="mobile-Image-miniature-webp" type="image/webp" media="(max-width: 767px)" srcset="">
+          <source id="mobile-Image-miniature" media="(max-width: 767px)" srcset="">
+
+          <source id="tablet-Image-miniature-webp" type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+          <source id="tablet-Image-miniature" media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+
+          <source id="desctop-Image-miniature-webp" type="image/webp" media="(min-width: 1024px)" srcset="">
+          <img class="places__miniature-img" id="desctop-Image-miniature" src="" srcset="" width="350" height="430" alt="">
+        </picture>
+        <span class="places__miniature-title"><span class="places__miniature-text"></span></span>
+        <div class="places__miniature-overlay">
+          <a class="places__miniature-link" href="#">смотреть подробнее</a>
+        </div>
+      </li>
+    </template>
+    <template id="bar-button">
+      <li class="places__check-bar-element">
+        <button class="places__check-button" type="button"></button>
+      </li>
+    </template>
+    <template id="fullsize">
+      <li class="places__full-size-element">
+        <p class="visually-hidden"><a class="places__qick-link" id="#"></a></p>
+        <div class="places__full-size-info">
+          <span class="places__full-size-title"></span>
+          <p class="places__full-size-text"></p>
+          <a class="button places__full-size-button button-buy" href="buy-now.html">купить тур сейчас</a>
+        </div>
+        <div class="places__full-size-image-block">
+          <picture>
+            <source id="mobile-Image-fullsize-webp" type="image/webp" media="(max-width: 767px)" srcset="">
+            <source id="mobile-Image-fullsize" media="(max-width: 767px)" srcset="">
+
+            <source id="tablet-Image-fullsize-webp" type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+            <source id="tablet-Image-fullsize" media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+
+            <source id="desctop-Image-fullsize-webp" type="image/webp" media="(min-width: 1024px)" srcset="">
+            <img class="places__full-size-img" id="desctop-Image-fullsize" src="" srcset="" width="430" height="596" alt="">
+          </picture>
+        </div>
+        <div class="places__comment">
+          <span class="places__comment-title">Отзывы</span>
+          <p class="places__comment-text"></p>
+          <div class="places__user-info">
+            <div class="places__user-photo-block">
+              <picture>
+                <source id="user-Avatar-Image-Webp" type="image/webp" srcset="">
+                <img class="places__user-photo" id="user-Avatar-Image" src="" srcset="" width="38" height="38" alt="">
+              </picture>
+            </div>
+            <span class="places__user-name"></span>
+          </div>
+        </div>
+      </li>
+    </template>
+    <template id="success">
+      <section class="success">
+        <div class="success__block">
+          <h2 class="success__title">Форма успешно отправлена, спасибо! :)</h2>
+          <button class="success__button-close" type="button" aria-label="Закрыть">
+            <svg class="success__button-close-icon" width="22" height="22">
+              <use href="#ico-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </template>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

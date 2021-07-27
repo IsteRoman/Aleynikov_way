@@ -1,0 +1,143 @@
+.header__section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    padding-top: 18.5px;
+    padding-bottom: 14.5px;
+    padding-right: 10px;
+  }
+}
+
+.header--no-js {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    margin-bottom: 568px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    margin-bottom: 568px;
+  }
+}
+
+.header__logo {
+  height: 22px;
+  flex-shrink: 0;
+  margin-right: auto;
+  outline: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    width: 44px;
+    height: 17px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    width: 44px;
+    height: 17px;
+  }
+}
+
+.header__button {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  outline: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    right: 21px;
+    display: block;
+    flex-grow: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    top: 10px;
+    right: 10px;
+    display: block;
+    flex-grow: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+}
+
+.header__button::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  right: -20px;
+  z-index: -1;
+  width: 72px;
+  height: 50px;
+  background-color: $peach;
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    top: -10px;
+    right: -9px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.header__close {
+  stroke: $white;
+  fill: none;
+  transition: $default-transition;
+}
+
+.header__open {
+  stroke: $special-dark-gray-0-2;
+  transition: $default-transition;
+}
+
+.header--menu-close .header__open {
+  display: none;
+}
+
+.header--menu-open .header__close {
+  display: none;
+}
+
+.header--menu-open .header__button::before {
+  background-color: transparent;
+}
+
+.header__button:focus .header__open,
+.header__button:focus .header__close,
+.header__button:hover .header__open,
+.header__button:hover .header__close {
+  stroke: $blue;
+  outline: 0;
+}
+
+.header__navigation {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.header__contacts {
+  display: block;
+  margin-top: 1px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+.success__block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 728px;
+  min-height: 444px;
+  margin-top: -222px;
+  margin-left: -364px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    width: 680px;
+    margin-left: -340px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    width: 290px;
+    min-height: 568px;
+    margin-top: -284px;
+    margin-left: -145px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: $white;
+  }
+}
+
+.success__title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 170%;
+  color: $modal-gray;
+}
+
+.success__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: $default-transition;
+}
+
+.success__button-close-icon {
+  stroke: $special-dark-gray-0-2;
+  transition: $default-transition;
+}
+
+.success__button-close:focus .success__button-close-icon,
+.success__button-close:hover .success__button-close-icon {
+  stroke: $peach;
+}
+
+.success__button-close:active .success__button-close-icon {
+  stroke: $peach-hover;
+}

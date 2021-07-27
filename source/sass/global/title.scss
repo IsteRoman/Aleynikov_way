@@ -1,0 +1,38 @@
+.title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.53;
+  color: $gray;
+  letter-spacing: -1.25px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  width: 230px;
+  height: 3px;
+  background-color: $peach;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    content: none;
+  }
+}

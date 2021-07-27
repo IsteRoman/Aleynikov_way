@@ -1,0 +1,125 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-right: 75px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.header--no-js .nav,
+.header--menu-open .nav {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-height: 568px;
+    margin: 0;
+    padding: 134px 24px 0 16px;
+    background-color: $white;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-height: 568px;
+    margin: 0;
+    padding: 134px 24px 0 16px;
+    background-color: $white;
+  }
+}
+
+.nav__item {
+  max-width: 130px;
+  margin-right: 40px;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: $special-dark-gray;
+  transition: $default-transition;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    position: relative;
+    display: inline-flex;
+    align-self: stretch;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    position: relative;
+    display: inline-flex;
+    align-self: stretch;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
+
+.nav__link-ico {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    position: absolute;
+    top: 3px;
+    left: 260px;
+    display: block;
+    fill: $gray-0-5;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    position: absolute;
+    top: 3px;
+    left: 260px;
+    display: block;
+    fill: $gray-0-5;
+  }
+}
+
+.nav__link:focus,
+.nav__link:hover,
+.nav__link:active {
+  color: $peach-hover;
+  outline: 0;
+}
+
+.nav__link:active {
+  opacity: 0.5;
+}
+
+.nav__link:focus .nav__link-ico,
+.nav__link:hover .nav__link-ico,
+.nav__link:active .nav__link-ico {
+  fill: $peach-hover;
+}

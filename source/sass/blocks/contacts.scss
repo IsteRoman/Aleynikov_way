@@ -1,0 +1,31 @@
+.contacts {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.77;
+  color: $special-dark-gray;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  transition: $default-transition;
+  cursor: pointer;
+  outline: 0;
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 2px;
+  left: -40px;
+  fill: none;
+  stroke: $special-dark-gray;
+  transition: $default-transition;
+}
+
+.contacts:focus,
+.contacts:hover {
+  color: $peach-hover;
+}
+
+.contacts:focus .contacts__icon,
+.contacts:hover .contacts__icon {
+  stroke: $peach-hover;
+}

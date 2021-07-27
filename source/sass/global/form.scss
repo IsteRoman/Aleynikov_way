@@ -1,0 +1,78 @@
+.form__input {
+  position: relative;
+  padding: 14px 15px 16px 15px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: $special-dark-gray;
+  transition: $default-transition;
+}
+
+.form__input::placeholder {
+  color: $special-dark-gray;
+}
+
+.form__input--reqaired {
+  padding-left: 51px;
+}
+
+.form__required-text {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.form__required-text::before {
+  content: "*";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  color: $peach;
+}
+
+.form__required-text::after {
+  content: "+7";
+  position: absolute;
+  top: 4px;
+  left: 25px;
+  z-index: 2;
+  width: 18px;
+  height: 19px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: $special-dark-gray;
+}
+
+.feedback__form .form__required-text::before {
+  top: 3px;
+  left: 15px;
+}
+
+.feedback__form .form__required-text::after {
+  top: 18px;
+  left: 25px;
+}
+
+.popup__form .form__required-text::before {
+  top: -50px;
+  left: -120px;
+}
+
+.popup__form .form__required-text::after {
+  top: -33px;
+  left: -110px;
+}
+
+.form__input:focus,
+.form__input:hover {
+  outline: 0;
+  box-shadow: 1px 0 0 0 $black;
+}
+
+.form__input--error {
+  border-color: $peach;
+}
